@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Gareth Tan, web developer</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700|Open+Sans:700italic,400,700,300' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/mfglabs_iconset.css">
+</head>
+
+<body>
+  <div class="topbar"></div>
+  <header class="namefield">
+    <section class="name-container center clearfix">
+      <div class="name">
+        Gareth Tan
+      </div>
+      <div class="webdev">
+        Hi! I'm a <strong>web developer</strong> working with <strong>Rails</strong>, <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong> who cares about <strong>design</strong> and writing <strong>elegant</strong> code.
+      </div>
+      <div class="links clearfix">
+        <div class="icon-container">
+          <div class="icon-logo">
+            <a href="https://github.com/garetht">
+              <i class="icon-octopus icon3x hoverable"></i>
+            </a>
+          </div>
+          <div class="icon-label"></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon-logo">
+            <a href="https://linkedin.com/in/garethtan">
+              <i class="icon-linked_in_circle icon3x hoverable"></i>
+            </a>
+          </div>
+          <div class="linkedin-label"></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon-logo">
+            <a href="http://www.dropbox.com/s/p5083bt3i0xqts4/gareth_tan_resume.pdf">
+              <i class="icon-information_white icon3x hoverable"></i>
+            </a>
+          </div>
+          <div class="icon-label"></div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <header class="navbar">
+    <div class="projects-container clearfix">
+      <ul class="projects clearfix">
+        <li class="project" id="lifestream">Lifestream</li>
+        <li class="project" id="shuffle">Shuffle</li>
+        <li class="project" id="helproku">Helproku</li>
+        <li class="project" id="snake">Snake</li>
+        <li class="project" id="asteroids">Asteroids</li>
+      </ul>
+  </div>
+  </header>
+  <header class="navbar-shadow"></header>
+  <section class="project-details" id="project-lifestream">
+    <div class="project-detail-header">
+      <a href="http://lifestream.garethtan.com/">
+        Lifestream
+      </a>
+      <span class="github-source">
+        [ <a href="http://github.com/garetht/lifestream">View Github Source</a> ]
+      </span>
+    </div>
+    <img src="images/lifestream.jpg">
+    <div class="project-detail-top">
+      This journal app is based on other note-taking applications like Evernote, but implements nested tags (categories) and advanced text editing with Markdown.
+    </div>
+    <div class="project-detail-bottom">
+      Demo Login
+      <ul>
+        <li>Username: demo</li>
+        <li>Password: password</li>
+      </ul>
+      Technologies and Libraries Used
+      <ul>
+        <li>Ruby on Rails</li>
+        <li>Javascript with jQuery, AJAX, and UJS</li>
+        <li>HTML 5</li>
+        <li>CSS written from scratch</li>
+        <li>SQL querying</li>
+        <li>APIs: Google Maps with gmaps4rails gem, Markit for stock quotes</li>
+        <li>Javascript parsing of custom scripting language to expand snippets like @ STOCK GOOG @ into Google's stock price in real time</li>
+        <li>Markdown live preview with Javascript</li>
+        <li>Devise for authentication, with Sendgrid for user confirmation, on Heroku</li>
+        <li>Paperclip for file uploading with Amazon S3. Drag and drop uploading with jQuery File Upload</li>
+        <li>Testing with RSpec, Poltergeist, FactoryGirl, and Capybara with Guard on Spork server</li>
+      </ul>
+    </div>
+  </section>
+  <section class="project-details" id="project-shuffle">
+    <div class="project-detail-header">
+      <a href="http://shuffle.garethtan.com/">
+        Shuffle
+      </a>
+      <span class="github-source">
+        [ <a href="http://github.com/garetht/shuffle-app">View Github Source</a> ]
+      </span>
+    </div>
+    <img src="images/shuffle.jpg">
+    <div class="project-detail-top">
+      Shuffle is Chatroulette for music. People can share music chosen by other users, and score points based on how popular their picks are. Created collaboratively in 24 hours during Facebook's Summer of Hack.
+    </div>
+    <div class="project-detail-bottom">
+      Technologies and Libraries Used
+      <ul>
+        <li>Ruby on Rails</li>
+        <li>Javascript with AJAX and jQuery UI</li>
+        <li>APIs: Echonest for jQuery UI autocomplete, Tomahawk for serving music from Spotify, Soundcloud, etc.</li>
+        <li>Facebook login with OAuth and Devise</li>
+      </ul>
+    </div>
+  </section>
+  <section class="project-details" id="project-helproku">
+    <div class="project-detail-header">
+      <a href="https://rubygems.org/gems/helproku">
+        Helproku 0.0.2
+      </a>
+      <span class="github-source">
+        [ <a href="http://github.com/garetht/helproku">View Github Source</a> ]
+      </span>
+    </div>
+    <img src="images/helproku.jpg">
+    <div class="project-detail-top">
+      This Ruby gem helps with the setup of a new Rails repository by automating the creation of a new Github repo, and performs the setup of a Heroku site for you.
+    </div>
+    <div class="project-detail-bottom">
+      Technologies and Libraries Used
+      <ul>
+        <li>Ruby on Rails: application templates with Thor</li>
+        <li>Bundler for gem packaging</li>
+      </ul>
+    </div>
+  </section>
+  <section class="project-details" id="project-snake">
+    <div class="project-detail-header">
+      <a href="http://people.cs.uchicago.edu/~garethwtan/snake/index.html">
+        Snake
+      </a>
+      <span class="github-source">
+        [ <a href="https://github.com/garetht/snake">View Github Source</a> ]
+      </span>
+    </div>
+    <img src="images/snake.jpg">
+    <div class="project-detail-top">
+      The classic game written in Javascript. Use the arrow keys to move, the spacebar to pause, and collect the red apples!
+    </div>
+    <div class="project-detail-bottom">
+      Technologies Used
+      <ul>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+  </section>
+  <section class="project-details" id="project-asteroids">
+    <div class="project-detail-header">
+      <a href="http://people.cs.uchicago.edu/~garethwtan/asteroids/index.html">
+        Asteroids
+      </a>
+      <span class="github-source">
+        [ <a href="https://github.com/dmcguinness/Asteroids">View Github Source</a> ]
+      </span>
+    </div>
+    <img src="images/asteroids.jpg">
+    <div class="project-detail-top">
+      The classic game written with a friend in Javascript and Canvas.
+    </div>
+    <div class="project-detail-bottom">
+      Technologies Used
+      <ul>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>Canvas</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="deets">
+
+  </footer>
+
+<script src="js/waypoints.min.js"></script>
+<script src="js/scrolling.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+
+</body>
+
+</html>

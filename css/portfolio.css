@@ -1,0 +1,209 @@
+body, strong, section, ul{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  background-color: #DDDCE0;
+}
+
+.topbar{
+  width: 100%;
+  height: 15px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #1C542D;
+  display: none;
+  z-index: 10000;
+}
+
+.namefield{
+  position: relative;
+  background-color: #1C542D;
+  width: 100%;
+  height: 500px;
+}
+
+.center{
+  margin: auto;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+}
+
+.clearfix:after{
+  clear:both;
+  display:table;
+  content: "";
+}
+
+.name-container{
+  display: block;
+  width: 50%;
+  height: 300px;
+  color: #DDDCE0;
+}
+
+.name{
+  display: block;
+  font-size: 96px;
+  font-family: "Cardo";
+  clear: both;
+}
+
+.webdev{
+  clear:both;
+  display: block;
+  padding-top: 5px;
+  padding-left: 5px;
+  float: right;
+  font-size: 24px;
+  font-family: "Open Sans";
+  line-height: 200%;
+  text-shadow: 2px 2px #2E2E2E;
+  margin-bottom: 50px;
+}
+
+.links{
+  clear:both;
+  line-height: 60%
+}
+
+.webdev strong{
+  font-weight: 700;
+}
+
+.icon-logo{
+  display: block;
+}
+
+.icon-logo a{
+  color: #DDDCE0;
+  text-decoration: none;
+}
+
+.icon-container{
+  float: left;
+  color: #DDDCE0;
+  padding-right: 30px;
+}
+
+.icon-label{
+  padding-top: 10px;
+  display: block;
+}
+
+/* This is the navigational bar for projects. */
+
+.navbar{
+  width: 100%;
+  padding-top: 25px;
+  border-top: 15px solid #DDDCE0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #C3C1C8;
+  background-color: #DDDCE0;
+  z-index: 1000;
+}
+
+.navbar-shadow{
+  display:none;
+  height: 135px;
+}
+
+.projects-container{
+  display: block;
+  margin: auto;
+}
+
+.projects{
+  list-style-type: none;
+  margin: auto;
+  width: 740px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: lowercase;
+}
+
+.project{
+  display: block;
+  float:left;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s;
+  -webkit-transition: border-color 0.5s;
+}
+
+.project:hover{
+  border-bottom-color: #2E2E2E;
+  transition: border-color 0.5s;
+  -webkit-transition: border-color 0.5s;
+  cursor: pointer;
+}
+
+/* Project detail containers */
+
+.project-details{
+  position: relative;
+  width: 740px;
+  margin: auto;
+  z-index: 1;
+  padding-top: 150px;
+}
+
+.github-source{
+  font-size: 16px;
+  font-family: "Open Sans";
+  text-decoration: none;
+}
+
+.project-detail-header a{
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+.project-detail-header a:hover{
+  color: #5491A3;
+}
+
+.project-detail-header{
+  font-family: "Cardo";
+  font-size: 48px;
+  color: #2E2E2E;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C3C1C8;
+}
+
+.project-detail-top{
+  font-family: "Cardo";
+  font-size: 24px;
+  padding: 30px 0px;
+  color: #2E2E2E;
+}
+
+.project-detail-bottom{
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.project-detail-bottom ul{
+  padding: 10px 0px;
+}
+
+.project-detail-bottom li{
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 5px 0px 5px 10px;
+  padding-left: 25px;
+  color: #2e2e2e;
+}
