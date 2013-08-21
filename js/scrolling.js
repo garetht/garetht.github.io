@@ -32,6 +32,13 @@ $(".project#helproku").on("click", function(){
   return false;
 })
 
+$(".project#newreader").on("click", function(){
+  $.smoothScroll({
+    scrollTarget: "#project-newreader"
+  });
+  return false;
+})
+
 $(".project#snake").on("click", function(){
   $.smoothScroll({
     scrollTarget: "#project-snake"
