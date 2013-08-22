@@ -281,6 +281,14 @@ body{
     padding-top: 150px;
   }
 
+  .projects{
+    width: 100%;
+  }
+
+  .project{
+    float: none;
+  }
+
   .project-image{
     width: 350px;
     height: 181px;

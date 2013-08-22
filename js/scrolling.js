@@ -1,5 +1,5 @@
-$(".navbar").waypoint(function(direction){
-  if (direction === "down"){
+$(".navbar.stickable").waypoint(function(direction){
+  if (direction === "down" && $("body").width() > 480){
     $(this).css({position: "fixed", top: "15px", left: "0px"});
     $(".topbar").css({display: "block"});
     $(".navbar-shadow").css({display: "block"})
