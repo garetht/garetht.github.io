@@ -209,7 +209,7 @@ body{
   color: #2e2e2e;
 }
 
-@media print, screen and (max-device-width: 910px) {
+@media print, screen and (max-width: 910px) {
 
   .namefield{
     height: 600px;
@@ -222,7 +222,7 @@ body{
   z-index: 1;
   padding-top: 150px;
   }
-
+  
   .projects{
     width: 100%;
   }
@@ -238,7 +238,7 @@ body{
   
 }
 
-@media print, screen and (max-device-width: 720px) {
+@media print, screen and (max-width: 720px) {
 
   .namefield{
     height: 700px;
@@ -271,7 +271,7 @@ body{
   
 }
 
-@media print, screen and (max-device-width: 480px) {
+@media print, screen and (max-width: 480px) {
 
   .namefield{
     height: 800px;
